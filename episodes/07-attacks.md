@@ -1,14 +1,20 @@
 ---
-title: "Attacks"
+title: Attacks
 teaching: 20
 exercises: 10
-questions:
-- "How can models be intentionally mislead?"
-objectives:
-- "Understand the concept of adversarial attacks."
-keypoints:
-- "Models are susceptible to manipulation."
 ---
+
+::::::::::::::::::::::::::::::::::::::: objectives
+
+- Understand the concept of adversarial attacks.
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
+:::::::::::::::::::::::::::::::::::::::: questions
+
+- How can models be intentionally mislead?
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
 
 ## Manipulation of models
 
@@ -18,14 +24,13 @@ It is important to be aware that models are susceptible to manipulation by targe
 
 One common method for attack is to alter input data to intentionally cause misclassification. Researchers at Google, for example, demonstrated that they could generate a sticker that could [trick a machine learning model](https://slate.com/technology/2018/01/google-researchers-tricked-an-a-i-into-thinking-a-banana-was-a-toaster.html) into confusing a picture of a banana with a toaster.
 
-![Banana or toaster](../fig/banana.png){: width="800px"}
+![](fig/banana.png){alt='Banana or toaster' width="800px"}
 
 While the "adversarial patch" requires significant effort to fool the algorithm, researchers at OpenAI discovered that their image classification model could be fooled by nothing more than a pen and paper. They announced that a model that they had developed for classifying images would "respond to the same concept whether presented literally, symbolically, or conceptually. As a result, they demonstrated some [surprising results](https://www.theguardian.com/technology/2021/mar/08/typographic-attack-pen-paper-fool-ai-thinking-apple-ipod-clip) in the application of the model.
 
-![poodle](../fig/poodle.png){: width="800px"}
+![](fig/poodle.png){alt='poodle' width="800px"}
 
-![apple](../fig/apple.png){: width="800px"}
-
+![](fig/apple.png){alt='apple' width="800px"}
 
 <!--
 
@@ -65,4 +70,12 @@ Where models are continuously trained, there is risk that new training data migh
 
 -->
 
-{% include links.md %}
+
+
+:::::::::::::::::::::::::::::::::::::::: keypoints
+
+- Models are susceptible to manipulation.
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
+

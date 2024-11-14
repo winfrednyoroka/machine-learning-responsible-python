@@ -1,17 +1,22 @@
 ---
-title: "Data"
+title: Data
 teaching: 20
 exercises: 10
-questions:
-- "How does data influence machine learning?"
-- "How can we better document data?"
-objectives:
-- "Recognise how data influences machine learning models."
-- "Learn an approach for structured documention of data characteristics."
-keypoints:
-- "Data is fundamental to the field of machine learning."
-- "Datasheets can help us to reflect on the process of data creation and distribution."
 ---
+
+::::::::::::::::::::::::::::::::::::::: objectives
+
+- Recognise how data influences machine learning models.
+- Learn an approach for structured documention of data characteristics.
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
+:::::::::::::::::::::::::::::::::::::::: questions
+
+- How does data influence machine learning?
+- How can we better document data?
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
 
 ## Data as a foundation
 
@@ -21,9 +26,9 @@ Should cover data representativeness: https://www.nature.com/articles/s41746-021
 TODO: briefly mention the SSI work on FAIR etc.
 -->
 
-Data is crucial for the field of machine learning and it forms the foundation for the models that we build and use. When data is made available to the machine learning community, it has the ability to drive progress and shape the direction of research. 
+Data is crucial for the field of machine learning and it forms the foundation for the models that we build and use. When data is made available to the machine learning community, it has the ability to drive progress and shape the direction of research.
 
-Lack of available data, meanwhile, stifles and stalls progress. Despite the importance of data, its creation and sharing has often been relegated to footnotes in machine learning studies, seen as secondary to the work of model building and application. 
+Lack of available data, meanwhile, stifles and stalls progress. Despite the importance of data, its creation and sharing has often been relegated to footnotes in machine learning studies, seen as secondary to the work of model building and application.
 
 ## The data landscape
 
@@ -39,36 +44,46 @@ In **[Data and its (dis)contents: A survey of dataset development and use in mac
 
 A 2021 study by [Birhane and colleagues](https://arxiv.org/abs/2110.01963) explored the LAION dataset, a huge dataset scraped from the internet that is often used as a source for training large language and imaging models.
 
-![CommonCrawl](../fig/bad_data.png)
+![](fig/bad_data.png){alt='CommonCrawl'}
 
 ## Machine learning during the pandemic
 
 When COVID-19 hit Europe in 2020, machine learning researchers around the world turned their focus to building predictive models to help beat the pandemic. Despite these efforts, [an inquiry by The Turing Institute](https://www.turing.ac.uk/sites/default/files/2021-06/data-science-and-ai-in-the-age-of-covid_full-report_2.pdf) concluded none of the models made a real difference, and some were potentially harmful.
 
-> ## Exercise
-> Look at this report published in the [MIT Technology Review](https://www.technologyreview.com/2021/07/30/1030329/machine-learning-ai-failed-covid-hospital-diagnosis-pandemic/) that summarises the findings of the Turing Institute.  
->  
-> A) What were some of the causes of failure, according to the article in the MIT Technology Review? ("What went wrong?").  
-> B) What solutions are suggested in the article? ("How to fix it?").
-> 
-> > ## Solution
-> > A) Poor quality data. "Many unwittingly used a data set that contained chest scans of children who did not have covid as their examples of what non-covid cases looked like. But as a result, the AIs learned to identify kids, not covid."
-> > 
-> > "Driggs’s group trained its own model using a data set that contained a mix of scans taken when patients were lying down and standing up. Because patients scanned while lying down were more likely to be seriously ill, the AI learned wrongly to predict serious covid risk from a person’s position."
-> > 
-> > "In yet other cases, some AIs were found to be picking up on the text font that certain hospitals used to label the scans. As a result, fonts from hospitals with more serious caseloads became predictors of covid risk."
-> > 
-> > "A more subtle problem Driggs highlights is incorporation bias, or bias introduced at the point a data set is labeled. For example, many medical scans were labeled according to whether the radiologists who created them said they showed covid. But that embeds, or incorporates, any biases of that particular doctor into the ground truth of a data set."
-> > 
-> > B) "Researchers also need to share their models and disclose how they were trained so that others can test them and build on them. “Those are two things we could do today,” he says. “And they would solve maybe 50% of the issues that we identified.”
-> >
-> > “If all these people making new models instead tested models that were already available, maybe we’d have something that could really help in the clinic by now.”
-> {: .solution}
-{: .challenge}
+:::::::::::::::::::::::::::::::::::::::  challenge
+
+## Exercise
+
+Look at this report published in the [MIT Technology Review](https://www.technologyreview.com/2021/07/30/1030329/machine-learning-ai-failed-covid-hospital-diagnosis-pandemic/) that summarises the findings of the Turing Institute.
+
+A) What were some of the causes of failure, according to the article in the MIT Technology Review? ("What went wrong?").  
+B) What solutions are suggested in the article? ("How to fix it?").
+
+:::::::::::::::  solution
+
+## Solution
+
+A) Poor quality data. "Many unwittingly used a data set that contained chest scans of children who did not have covid as their examples of what non-covid cases looked like. But as a result, the AIs learned to identify kids, not covid."
+
+"Driggs's group trained its own model using a data set that contained a mix of scans taken when patients were lying down and standing up. Because patients scanned while lying down were more likely to be seriously ill, the AI learned wrongly to predict serious covid risk from a person's position."
+
+"In yet other cases, some AIs were found to be picking up on the text font that certain hospitals used to label the scans. As a result, fonts from hospitals with more serious caseloads became predictors of covid risk."
+
+"A more subtle problem Driggs highlights is incorporation bias, or bias introduced at the point a data set is labeled. For example, many medical scans were labeled according to whether the radiologists who created them said they showed covid. But that embeds, or incorporates, any biases of that particular doctor into the ground truth of a data set."
+
+B) "Researchers also need to share their models and disclose how they were trained so that others can test them and build on them. "Those are two things we could do today," he says. "And they would solve maybe 50% of the issues that we identified."
+
+"If all these people making new models instead tested models that were already available, maybe we'd have something that could really help in the clinic by now."
+
+
+
+:::::::::::::::::::::::::
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
 
 ## Data documentation
 
-Given the fundamental role of data in machine learning, there have been calls for data sharers to provide better documention for the downstream consumers. 
+Given the fundamental role of data in machine learning, there have been calls for data sharers to provide better documention for the downstream consumers.
 
 The Conference on Neural Information Processing Systems, for example, introduced a [Dataset Track](https://neuripsconf.medium.com/announcing-the-neurips-2021-datasets-and-benchmarks-track-644e27c1e66c) for the first time in 2021 to encourage reporting "on highly valuable machine learning datasets and benchmarks" ... and to create a forum to discuss "how to improve dataset development".
 
@@ -76,20 +91,39 @@ In [Datasheets for Datasets](https://arxiv.org/pdf/1803.09010.pdf), Gebru et al 
 
 > "We propose that every dataset be accompanied with a datasheet that documents its motivation, composition, collection process, recommended uses, and so on. Datasheets for datasets have the potential to increase transparency and accountability within the machine learning community, mitigate unwanted societal biases in machine learning models, facilitate greater reproducibility of machine learning results, and help researchers and practitioners to select more appropriate datasets for their chosen tasks
 
-> ## Exercise
-> Look at Appendix A of [Datasheets for Datasets](https://arxiv.org/pdf/1803.09010.pdf).  
->  
-> What sections are included in the example datasheet? What do these sections seek to capture?
-> 
-> > ## Solution
-> >  - Motivation
-> >  - Composition
-> >  - Collection Process
-> >  - Preprocessing/cleaning/labeling
-> >  - Uses
-> >  - Distribution
-> >  - Maintenance
-> {: .solution}
-{: .challenge}
+:::::::::::::::::::::::::::::::::::::::  challenge
 
-{% include links.md %}
+## Exercise
+
+Look at Appendix A of [Datasheets for Datasets](https://arxiv.org/pdf/1803.09010.pdf).
+
+What sections are included in the example datasheet? What do these sections seek to capture?
+
+:::::::::::::::  solution
+
+## Solution
+
+- Motivation
+- Composition
+- Collection Process
+- Preprocessing/cleaning/labeling
+- Uses
+- Distribution
+- Maintenance
+  
+  
+
+:::::::::::::::::::::::::
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
+
+
+:::::::::::::::::::::::::::::::::::::::: keypoints
+
+- Data is fundamental to the field of machine learning.
+- Datasheets can help us to reflect on the process of data creation and distribution.
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
+
