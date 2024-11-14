@@ -2,16 +2,18 @@
 title: "Explainability"
 teaching: 20
 exercises: 10
-questions:
-- "What is explainability?"
-- "Is explainability necessary?"
-objectives:
+---
+::: objectives
+
 - "Understand the concepts of explainability and interpretability."
 - "Understand how saliency maps can help us to explain a model."
-keypoints:
-- "The importance of explainability is a matter of debate."
-- "Saliency maps highlight regions of data that most strongly contributed to a decision."
----
+:::
+
+::: questions
+- "What is explainability?"
+- "Is explainability necessary?"
+:::
+
 
 ## Interpretability and explainability
 
@@ -63,5 +65,7 @@ The requirement for explainability is even making its way into legal governance.
 
 If our doctor or nurse recommends paracetamol (acetaminophen) for pain management, most of us would accept the suggestion without question. This is despite the action of paracetamol at a molecular level [being unclear](https://pubmed.ncbi.nlm.nih.gov/15662292/). Are we holding machine learning models to a higher standard than humans? 
 
-
-{% include links.md %}
+::: keypoints
+- "The importance of explainability is a matter of debate."
+- "Saliency maps highlight regions of data that most strongly contributed to a decision."
+:::
