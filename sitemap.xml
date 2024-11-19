@@ -31,7 +31,13 @@
     <loc>https://carpentries-incubator.github.io/machine-learning-responsible-python/LICENSE.html</loc>
   </url>
   <url>
+    <loc>https://carpentries-incubator.github.io/machine-learning-responsible-python/aio.html</loc>
+  </url>
+  <url>
     <loc>https://carpentries-incubator.github.io/machine-learning-responsible-python/discuss.html</loc>
+  </url>
+  <url>
+    <loc>https://carpentries-incubator.github.io/machine-learning-responsible-python/images.html</loc>
   </url>
   <url>
     <loc>https://carpentries-incubator.github.io/machine-learning-responsible-python/index.html</loc>
@@ -67,16 +73,34 @@
     <loc>https://carpentries-incubator.github.io/machine-learning-responsible-python/instructor/LICENSE.html</loc>
   </url>
   <url>
+    <loc>https://carpentries-incubator.github.io/machine-learning-responsible-python/instructor/aio.html</loc>
+  </url>
+  <url>
     <loc>https://carpentries-incubator.github.io/machine-learning-responsible-python/instructor/discuss.html</loc>
   </url>
   <url>
+    <loc>https://carpentries-incubator.github.io/machine-learning-responsible-python/instructor/images.html</loc>
+  </url>
+  <url>
     <loc>https://carpentries-incubator.github.io/machine-learning-responsible-python/instructor/index.html</loc>
+  </url>
+  <url>
+    <loc>https://carpentries-incubator.github.io/machine-learning-responsible-python/instructor/instructor-notes.html</loc>
+  </url>
+  <url>
+    <loc>https://carpentries-incubator.github.io/machine-learning-responsible-python/instructor/key-points.html</loc>
   </url>
   <url>
     <loc>https://carpentries-incubator.github.io/machine-learning-responsible-python/instructor/profiles.html</loc>
   </url>
   <url>
     <loc>https://carpentries-incubator.github.io/machine-learning-responsible-python/instructor/reference.html</loc>
+  </url>
+  <url>
+    <loc>https://carpentries-incubator.github.io/machine-learning-responsible-python/instructor-notes.html</loc>
+  </url>
+  <url>
+    <loc>https://carpentries-incubator.github.io/machine-learning-responsible-python/key-points.html</loc>
   </url>
   <url>
     <loc>https://carpentries-incubator.github.io/machine-learning-responsible-python/profiles.html</loc>
